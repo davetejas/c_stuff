@@ -34,10 +34,10 @@ class operations {
             
             
             array_elem[arr_idx] = last_elem;                 //overwriting deleted element
-            hashmap[last_elem] = arr_idx;
-            hashmap[value] = -1;            
-            array_elem[max_element] = 0;                          //resetting last element
-            max_element--;
+            hashmap[last_elem] = arr_idx;                    //updating hashmap with new index
+            hashmap[value] = -1;                             //resetting hashmap for deleted elem
+            array_elem[max_element] = 0;                     //resetting last element      
+            max_element--;                                   //decrementing total no. of elements
         } else {
             cout << "incorrect input" << endl;
         }        
